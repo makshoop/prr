@@ -1,3 +1,5 @@
+import { getCategory } from "./cards";
+
 function getCategories() {
 	fetch("https://fakestoreapi.com/products/categories")
 		.then((res) => res.json())
@@ -20,12 +22,12 @@ let categoryValue = document.getElementById("category");
 let sortValue = document.getElementById("sort");
 let quantValue = document.getElementById("quant");
 
-function getValue() {
+export function getValue() {
 	let valueCat = categoryValue.value;
 	return valueCat;
 }
 
-function getSort() {
+export function getSort() {
 	let valueSort = sortValue.value;
 	if (valueSort === "low") {
 		return "?sort=asc";
@@ -34,7 +36,7 @@ function getSort() {
 	}
 }
 
-function getQuant() {
+export function getQuant() {
 	let valueQuant = quantValue.value;
 	let quant = "&limit=";
 	return quant + valueQuant;

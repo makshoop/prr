@@ -1,4 +1,8 @@
-function getCategory() {
+import { getValue } from "./selectors";
+import { getSort } from "./selectors";
+import { getQuant } from "./selectors";
+
+export function getCategory() {
 	fetch(
 		"https://fakestoreapi.com/products/category/" +
 			getValue() +
