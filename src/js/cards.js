@@ -26,3 +26,22 @@ export function getCategory() {
 	`;
 		});
 }
+
+function firstCategory() {
+	fetch("https://fakestoreapi.com/products/category/electronics")
+		.then((res) => res.json())
+		.then((json) => {
+			const products = json.map((product) => {
+				return `
+			<div class='card'>
+				<img class='image' src="${product.image}">
+				<b>${product.title}</b>
+				<p>Price: ${product.price}$</p>
+			</div>
+			`;
+			});
+			document.querySelector("#cards").innerHTML = products.join("");
+		});
+}
+
+firstCategory();
