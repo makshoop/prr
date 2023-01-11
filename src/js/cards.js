@@ -16,15 +16,16 @@ export function getCategory() {
                 <div class='card'>
                     <img class='image' src="${product.image}">
 					<b>${product.title}</b>
+					<a href=''>View More...</a>
                     <p>Price: ${product.price}$</p>
                 </div>
                 `;
 			});
 			document.querySelector("#cards").innerHTML = products.join("");
-			document.querySelector("#load").innerHTML = `
-		<img class='' src="src/assets/load.gif" alt="loading...">
-	`;
 		});
+	// document.querySelector("#load").innerHTML = `
+	// 	<img class='' src="src/assets/load.gif" alt="loading...">
+	// `;
 }
 
 function firstCategory() {
@@ -36,6 +37,7 @@ function firstCategory() {
 			<div class='card'>
 				<img class='image' src="${product.image}">
 				<b>${product.title}</b>
+				<a href=''>View More...</a>
 				<p>Price: ${product.price}$</p>
 			</div>
 			`;

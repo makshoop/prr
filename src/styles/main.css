@@ -12,7 +12,7 @@
     }
 
     .cards {
-        grid-template-columns: auto auto ;
+        grid-template-columns: 370px 370px ;
     }
 
     .footer {
@@ -35,7 +35,7 @@
     }
 
     .cards {
-        grid-template-columns: auto ;
+        grid-template-columns: 370px ;
     }
 
     .footer {
