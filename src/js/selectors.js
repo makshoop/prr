@@ -42,16 +42,14 @@ export function getQuant() {
 	return quant + valueQuant;
 }
 
-categoryValue.addEventListener("click", () => {
+categoryValue.addEventListener("change", () => {
 	getCategory();
 });
 
-sortValue.addEventListener("click", () => {
-	getSort();
+sortValue.addEventListener("change", () => {
 	getCategory();
 });
 
-quantValue.addEventListener("click", () => {
-	getQuant();
+quantValue.addEventListener("change", () => {
 	getCategory();
 });

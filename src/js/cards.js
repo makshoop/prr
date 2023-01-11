@@ -21,11 +21,8 @@ export function getCategory() {
                 `;
 			});
 			document.querySelector("#cards").innerHTML = products.join("");
-		});
-	document.querySelector("#cards").innerHTML = `
-		<img class='' src="src/assets/load.gif" alt="loading...">
-		<img class='' src="src/assets/load.gif" alt="loading...">
-		<img class='' src="src/assets/load.gif" alt="loading...">
+			document.querySelector("#load").innerHTML = `
 		<img class='' src="src/assets/load.gif" alt="loading...">
 	`;
+		});
 }

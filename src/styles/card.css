@@ -1,7 +1,7 @@
 .cards {
     display: grid;
     padding-top: 70px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 370px 370px 370px 370px;
     justify-content: space-evenly;
 }
 
