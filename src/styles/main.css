@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 700px) {
+    .head {
+        text-align: center;
+        align-items: center;
+        margin: 10px;
+        border: 5px solid;
+        font-size: 27px;
+    }
+
+    .selectors {
+        flex-wrap: wrap;
+        font-size: xx-small;
+    }
+
+    .cards {
+        grid-template-columns: auto ;
+    }
+
+    .footer {
+        font-size: small;
+    }
+}
+
+@media(max-width: 1280px) {
+    .head {
+        text-align: center;
+        align-items: center;
+        border: 7px solid;
+        font-size: 35px;
+    }
+
+    .cards {
+        grid-template-columns: auto auto ;
+    }
+
+    .footer {
+        font-size: 15px;
+}
+}
