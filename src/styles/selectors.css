@@ -1,0 +1,38 @@
+.selectors {
+    font-family: 'Syncopate', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    border-top: 1px solid;
+    border-bottom: 3px solid;
+}
+
+h3 {
+    padding: 10px;
+}
+.category {
+    display: flex;
+    align-items: center;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+}
+
+.quant {
+    display: flex;
+    align-items: center;
+}
+
+select {
+    font-family: 'Cutive Mono', monospace;
+    border: 2px solid;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+select:hover {
+    background-color: rgba(243, 243, 243, 0.858);
+}
